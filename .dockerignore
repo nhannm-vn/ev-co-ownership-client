@@ -1,0 +1,34 @@
+# Exclude package-lock.json since we use Yarn
+package-lock.json
+
+# Exclude node_modules (will be installed in container)
+node_modules
+
+# Exclude build output
+dist
+
+# Exclude git files
+.git
+.gitignore
+
+# Exclude IDE files
+.vscode
+.idea
+
+# Exclude environment files (will be passed as build args)
+.env
+.env.local
+.env.*.local
+
+# Exclude documentation
+README.md
+*.md
+
+# Exclude CI/CD files
+.github
+
+# Exclude Docker files from being copied into Docker context
+.docker
+Dockerfile
+docker-compose.yml
+
